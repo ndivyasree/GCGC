@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <style>
+    h4 {
+      color: white;
+    }
+    @media only screen and (min-width: 400px) {
+      h4 {
+        margin-left: 300px;
+      }
+    }
+    h3 {
+      padding-top: 3.7ch;
+      font-family: cursive;
+      font-style: italic;
+      
+    }
+    @media only screen and(max-width: 350px) {
+      .greet {
+        padding-top: 1px;
+      }
+    }
+  </style>
     
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GCGC</title>
+    <title>GCGC-header</title>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/0000000000.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     
         
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
             <!-- Brand -->
-            
+          
                 <a class="navbar-brand" href="#">
                     <img src="gitam-logo.jpg" alt="Logo" style="width:40px;">
                 </a>
                 <a class="navbar-brand">Gitam Bengaluru</a>
             
-            
-                <h4 style="margin-left: 350px;color: white;">GITAM Career Guidance Cell</h4>
+             
+                <h4>GITAM Career Guidance Cell</h4>
             
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -37,7 +58,7 @@
               
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                      <a class="nav-link glyphicon glyphicon-home " href="index.html">Home</a>
+                      <a class="nav-link" href="index.html">Home</a>
                       
                     </li>
                     <li class="nav-item">
@@ -48,11 +69,11 @@
                     </li>
                     
                   </ul>
-              
             </div>
-          </nav>
+          
+        </nav>
     
-      <header class="jumbotron" style="height: 180px;padding-top: 10px;">
+      <header class="jumbotron" style="height: 200px ;padding-top: 10px;">
           <div class="row">
           
             <div class="col-4">
@@ -61,9 +82,9 @@
               <p style="font-size: 23px;">welcome--Name--</p>
              </div>
              
-            <div class="col-6"></div>
-            <div class="col-2">
-              <h4 style="padding-top: 3.7ch;font-family: cursive;font-style: italic;">Have a nice day</h4>
+            <div class="col-5"></div>
+            <div class="col-3 greet">
+              <h3>Have a nice day :)</h3>
             </div>
           </div>
       </header>
