@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Attendance', 'Average Attendance'],
+          ['tt1', 141, 91],
+          ['tt2', 82, 47],
+          ['tt3', 66, 42],
+          ['tt4', 182, 142],
+          ['tt5', 90, 71],
+          ['crt1', 100, 54],
+          ['crt2',0,0],
+          ['crt3',0,0],
+          ['crt4',0,0],
+          
+        ]);
+
+        var options = {
+          chart: {
+            
+          },
+          colors: ['#3498DB','#F5B0B0'],
+          legend: {
+              position:"top"
+          },
+          title: 'Integrated Attendance Report',
+            subtitle: 'Attendance and Avg Attendance',
+           
+     
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('columnchart_material'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="columnchart_material" style="width: 100%; height: 500px;margin: 50px 0px;"></div>
+  </body>
+</html>
